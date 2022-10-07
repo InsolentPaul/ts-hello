@@ -33,3 +33,14 @@ enum color {
 }
 
 let backgroundColor = color.Red;
+
+/* let message = "abc"; // type string
+let endsWithC = message.endsWith("c"); // true */
+
+// but
+
+let message;
+message = "abc"; // type any
+// let endsWithC = message.endsWith("c"); // error because ends.With needs string
+let endsWithC = (<string>message).endsWith("c"); // type asortion to string == true
+let alternativeWay = (message as string).endsWith("c"); // another way of type asortion == true
