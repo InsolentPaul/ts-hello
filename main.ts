@@ -105,6 +105,11 @@ let getDistance = (pointA: Point, pointB: Point) => {
 class Point {
   x: number;
   y: number;
+  constructor(x: number, y: number) {
+    this.x = x;
+    this.y = y;
+    point.draw();
+  }
   drawClass() {
     console.log("X: " + this.x + ", Y: " + this.y);
   }
@@ -114,7 +119,10 @@ class Point {
 }
 
 // objects
-let point = new Point();
-point.x = 1;
-point.y = 2;
+let point = new Point(1, 2);
+// point.x = 1;
+// point.y = 2;
+// ... if this points will be much more we use constructors
 point.drawClass();
+
+// constructors
