@@ -42,5 +42,19 @@ let endsWithC = message.endsWith("c"); // true */
 let message;
 message = "abc"; // type any
 // let endsWithC = message.endsWith("c"); // error because ends.With needs string
-let endsWithC = (<string>message).endsWith("c"); // type asortion to string == true
-let alternativeWay = (message as string).endsWith("c"); // another way of type asortion == true
+// let endsWithC = (<string>message).endsWith("c"); // type asortion to string == true
+// let alternativeWay = (message as string).endsWith("c"); // another way of type asortion == true
+
+// arrow functions
+
+let log = function (message) {
+  console.log(message);
+};
+
+let doLog = (message) => {
+  console.log(message);
+};
+
+let doLogShort = (message) => console.log(message); //
+
+// custom types

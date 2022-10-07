@@ -27,3 +27,20 @@ var color;
     color[color["Blue"] = 2] = "Blue";
 })(color || (color = {}));
 var backgroundColor = color.Red;
+/* let message = "abc"; // type string
+let endsWithC = message.endsWith("c"); // true */
+// but
+var message;
+message = "abc"; // type any
+// let endsWithC = message.endsWith("c"); // error because ends.With needs string
+// let endsWithC = (<string>message).endsWith("c"); // type asortion to string == true
+// let alternativeWay = (message as string).endsWith("c"); // another way of type asortion == true
+// arrow functions
+var log = function (message) {
+    console.log(message);
+};
+var doLog = function (message) {
+    console.log(message);
+};
+var doLogShort = function (message) { return console.log(message); }; //
+// custom types
