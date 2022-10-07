@@ -106,7 +106,15 @@ class Point {
   x: number;
   y: number;
   drawClass() {
+    console.log("X: " + this.x + ", Y: " + this.y);
+  }
+  getDistance(another: Point) {
     // ...
   }
-  getDistance(another: Point) {}
 }
+
+// objects
+let point = new Point();
+point.x = 1;
+point.y = 2;
+point.drawClass();
