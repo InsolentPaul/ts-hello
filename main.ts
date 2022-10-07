@@ -1,7 +1,8 @@
-function log(message) {
-  console.log(message);
+function doSomething() {
+  for (var i = 0; i < 5; i++) {
+    console.log(i);
+  }
+  console.log(i + "finnaly");
 }
 
-const message = "Hello World";
-
-log(message);
+doSomething();
