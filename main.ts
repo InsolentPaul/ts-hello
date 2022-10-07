@@ -1,3 +1,4 @@
+import { Point } from "./point";
 /* function doSomething() {
   for (var i = 0; i < 5; i++) {
     console.log(i);
@@ -77,12 +78,12 @@ drawPointsPoint({
   y: 2,
 });
 
-interface Point {
+/* interface Point {
   // Pascal naming convention, first letter uppercase
   x: number;
   y: number;
   draw: () => void;
-}
+} */
 
 let drawPointsPointInterface = (point: Point) => {
   // interface
@@ -101,22 +102,6 @@ let getDistance = (pointA: Point, pointB: Point) => {
   y: number;
   draw: () => void;
 } */
-
-class Point {
-  x: number;
-  y: number;
-  constructor(x: number, y: number) {
-    this.x = x;
-    this.y = y;
-    point.draw();
-  }
-  drawClass() {
-    console.log("X: " + this.x + ", Y: " + this.y);
-  }
-  getDistance(another: Point) {
-    // ...
-  }
-}
 
 // objects
 let point = new Point(1, 2);
