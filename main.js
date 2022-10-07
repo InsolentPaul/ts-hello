@@ -44,3 +44,21 @@ var doLog = function (message) {
 };
 var doLogShort = function (message) { return console.log(message); }; //
 // custom types
+var drawPoints = function (x, y) {
+    // ...
+};
+var drawPointsLong = function (x, y, a, b, c, d, e) {
+    // ...
+};
+var drawPointsPoint = function (point) {
+    // inline anotation
+    // ...
+};
+drawPointsPoint({
+    x: 1,
+    y: 2
+});
+var drawPointsPointInterface = function (point) {
+    // interface
+    // ...
+};

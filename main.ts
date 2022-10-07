@@ -58,3 +58,31 @@ let doLog = (message) => {
 let doLogShort = (message) => console.log(message); //
 
 // custom types
+
+let drawPoints = (x, y) => {
+  // ...
+};
+
+let drawPointsLong = (x, y, a, b, c, d, e) => {
+  // ...
+};
+
+let drawPointsPoint = (point: { x: number; y: number }) => {
+  // inline anotation
+  // ...
+};
+
+drawPointsPoint({
+  x: 1,
+  y: 2,
+});
+interface Point {
+  // Pascal naming convention, first letter uppercase
+  x: number;
+  y: number;
+}
+
+let drawPointsPointInterface = (point: Point) => {
+  // interface
+  // ...
+};
