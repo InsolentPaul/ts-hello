@@ -76,13 +76,37 @@ drawPointsPoint({
   x: 1,
   y: 2,
 });
+
 interface Point {
   // Pascal naming convention, first letter uppercase
   x: number;
   y: number;
+  draw: () => void;
 }
 
 let drawPointsPointInterface = (point: Point) => {
   // interface
   // ...
 };
+
+let getDistance = (pointA: Point, pointB: Point) => {
+  // ...
+};
+
+// class
+
+/* interface Point {
+  // Pascal naming convention, first letter uppercase
+  x: number;
+  y: number;
+  draw: () => void;
+} */
+
+class Point {
+  x: number;
+  y: number;
+  drawClass() {
+    // ...
+  }
+  getDistance(another: Point) {}
+}

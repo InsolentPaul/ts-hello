@@ -62,3 +62,22 @@ var drawPointsPointInterface = function (point) {
     // interface
     // ...
 };
+var getDistance = function (pointA, pointB) {
+    // ...
+};
+// class
+/* interface Point {
+  // Pascal naming convention, first letter uppercase
+  x: number;
+  y: number;
+  draw: () => void;
+} */
+var Point = /** @class */ (function () {
+    function Point() {
+    }
+    Point.prototype.drawClass = function () {
+        // ...
+    };
+    Point.prototype.getDistance = function (another) { };
+    return Point;
+}());
